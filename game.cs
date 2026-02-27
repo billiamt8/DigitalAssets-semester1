@@ -60,8 +60,8 @@ class GameSuite
 	static Random rand = new Random();
 	static void PlayRPS()
 	{	Console.Clear();
-		bool runningNC = true;
-		while (runningNC) {
+		bool runningRPS = true;
+		while (runningRPS) {
 		Console.WriteLine("---Rock Paper Scissors---");	
 			
 					
@@ -80,7 +80,6 @@ class GameSuite
 			if (computerInput == userInput) 
 			{
 				Console.WriteLine("It's a draw!");
-
 			}
 			else if (computerInput == 1 && userInput == 2) 
 			{
@@ -90,24 +89,21 @@ class GameSuite
 				Console.WriteLine("You lose!");	
 			} else if (computerInput == 3 && userInput == 1) 
 			{
-				Console.WriteLine("You lose!");
+				Console.WriteLine("You win!");
 
 			} else if (computerInput == 1 && userInput == 3) 
 			{
-				Console.WriteLine("You win!");
+				Console.WriteLine("You lose!");
 
 			} else if (computerInput == 2 && userInput == 3) 
 			{
-				Console.WriteLine("You lose!");
+				Console.WriteLine("You win!");
 
 			} else if (computerInput == 3 && userInput == 2) 
 			{	
-				Console.WriteLine("You win!");
-			} else if (userInput == 4)
+				Console.WriteLine("You lose!");
+			}else 
 			{
-				
-			}
-			else {
 				Console.WriteLine("Invalid input, try again.");
 			}
 		}
